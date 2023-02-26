@@ -1,0 +1,280 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.9rem;
+  align-items: center;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: normal;
+  color: #121212;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Manrope";
+  font-style: normal;
+  color: #121212;
+  padding: 0 3.3rem;
+}
+
+.container-square {
+  max-width: 115rem;
+}
+
+.header {
+  font-size: 1.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
+  margin-top: 3.3rem;
+  letter-spacing: -0.03em;
+}
+
+.header-left {
+  padding: 0;
+  margin: 0;
+}
+
+.header-left img {
+  width: auto;
+  height: 1.9rem;
+}
+
+.header-right {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+a:first-of-type {
+  color: #888888;
+  border-bottom: 1px solid #888888;
+}
+
+.container-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+}
+
+.background-chair {
+  display: flex;
+  align-items: end;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../Resources/Photos/Chair.png) center center/cover no-repeat;
+  width: 100%;
+  height: 50vw;
+  max-height: 50rem;
+}
+
+.background-chair p {
+  color: #fff;
+  max-width: 43rem;
+  margin: 4rem;
+  font-size: 2rem;
+  line-height: 2.73rem;
+  letter-spacing: -0.03em;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+  justify-content: start;
+}
+
+p {
+  font-size: 4.5rem;
+  line-height: 6.14rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+}
+
+.container-about a {
+  width: fit-content;
+  background-color: #ad1818;
+  color: #fff;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 2.73rem;
+  letter-spacing: -0.03em;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+}
+
+.project {
+  margin-bottom: 9rem;
+}
+
+.project img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.project a {
+  border: none;
+  color: #ad1818;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 2.73rem;
+  margin-bottom: 9rem;
+  letter-spacing: -0.03em;
+}
+
+a.project-show-all {
+  color: #121212;
+  border-bottom: #ad1818;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 5.6rem;
+  padding-bottom: 5.6rem;
+  border: 0.1rem solid #ad1818;
+  text-decoration: none;
+  color: #ad1818;
+  letter-spacing: -0.03em;
+}
+
+.container-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #121212;
+  align-items: start;
+  margin-bottom: 7.5rem;
+}
+
+.container-services h2 {
+  margin-top: 15rem;
+}
+
+.container-services img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.service {
+  margin-bottom: 6rem;
+}
+
+.container-main-project {
+  margin-top: 15rem;
+  margin-bottom: 68rem;
+}
+
+.container-main-project img {
+  width: 100%;
+}
+
+.container-main-project h3 {
+  color: #fff;
+  position: absolute;
+  margin-top: -12rem;
+  margin-left: 4rem;
+  max-width: 47rem;
+}
+
+.black_background {
+  background: #121212;
+}
+
+.container-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+  width: 100%;
+}
+
+.container-contacts img {
+  max-width: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.container-contacts h3 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+}
+
+.container-contacts a {
+  color: #121212;
+  text-decoration: none;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+  border: none;
+}
+footer {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  margin-bottom: 9rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p {
+  color: #454545;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 3rem;
+}

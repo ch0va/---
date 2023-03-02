@@ -1,17 +1,17 @@
 html {
+  font-family: "Manrope";
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.9rem;
   align-items: center;
-  font-family: "Manrope";
   font-weight: 400;
   font-style: normal;
   color: #121212;
 }
 
-.container {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,24 +21,17 @@ body {
   padding: 0 3.3rem;
 }
 
-.container-square {
+.container {
   max-width: 115rem;
 }
 
 .header {
-  font-size: 1.8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 7rem;
   margin-top: 3.3rem;
-  letter-spacing: -0.03em;
-}
-
-.header-left {
-  padding: 0;
-  margin: 0;
 }
 
 .header-left img {
@@ -47,24 +40,25 @@ body {
 }
 
 .header-right {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 6rem;
 }
 
-a {
+.header-right a {
   color: #121212;
+  font-size: 1.8rem;
+  letter-spacing: -0.03em;
   text-decoration: none;
 }
 
-a:first-of-type {
-  color: #888888;
-  border-bottom: 1px solid #888888;
+.header-right a:hover {
+  color: #6c6c6c;
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
-.container-main {
-  position: relative;
+.wrapper-main {
   display: flex;
   flex-direction: column;
   margin-bottom: 15rem;
@@ -72,8 +66,8 @@ a:first-of-type {
 }
 
 h1 {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 6rem;
+  line-height: 6rem;
   margin-bottom: 3rem;
   letter-spacing: -0.03em;
 }
@@ -101,17 +95,17 @@ h1 {
   letter-spacing: -0.03em;
 }
 
-.container-about {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15rem;
-}
-
 h2 {
   font-size: 1.8rem;
   margin-bottom: 3rem;
   letter-spacing: -0.03em;
   justify-content: start;
+}
+
+.wrapper-about_us {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
 }
 
 p {
@@ -121,7 +115,7 @@ p {
   letter-spacing: -0.03em;
 }
 
-.container-about a {
+.wrapper-about_us a {
   width: fit-content;
   background-color: #ad1818;
   color: #fff;
@@ -130,9 +124,17 @@ p {
   font-size: 2rem;
   line-height: 2.73rem;
   letter-spacing: -0.03em;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
 
-.container-projects {
+.wrapper-about_us a:hover {
+  background-color: #ca1e1e;
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+.wrapper-projects {
   display: flex;
   flex-direction: column;
   margin-bottom: 15rem;
@@ -162,11 +164,15 @@ h3 {
   line-height: 2.73rem;
   margin-bottom: 9rem;
   letter-spacing: -0.03em;
+  transition: 0.3s;
 }
 
-a.project-show-all {
-  color: #121212;
-  border-bottom: #ad1818;
+.project a:hover {
+  color: #ca1e1e;
+  transition: 0.3s;
+}
+
+a.project-show_all {
   font-size: 3rem;
   text-align: center;
   padding-top: 5.6rem;
@@ -175,24 +181,33 @@ a.project-show-all {
   text-decoration: none;
   color: #ad1818;
   letter-spacing: -0.03em;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
 
-.container-services {
+a.project-show_all:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ad1818;
+  letter-spacing: -0.03em;
+  transition: 0.4s;
+}
+
+.wrapper-services {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-sizing: border-box;
   color: #fff;
   background-color: #121212;
   align-items: start;
   margin-bottom: 7.5rem;
 }
 
-.container-services h2 {
+.wrapper-services h2 {
   margin-top: 15rem;
 }
 
-.container-services img {
+.wrapper-services img {
   width: 100%;
   margin-bottom: 1.5rem;
 }
@@ -201,28 +216,32 @@ a.project-show-all {
   margin-bottom: 6rem;
 }
 
-.container-main-project {
+.wrapper-single_project {
   margin-top: 15rem;
   margin-bottom: 68rem;
 }
 
-.container-main-project img {
+.wrapper-single_project-img {
+  position: relative;
+}
+
+.wrapper-single_project-img img {
   width: 100%;
 }
 
-.container-main-project h3 {
+.wrapper-single_project-img a {
   color: #fff;
   position: absolute;
-  margin-top: -12rem;
-  margin-left: 4rem;
-  max-width: 47rem;
+  max-width: 31rem;
+  bottom: 2.5rem;
+  left: 2.5rem;
 }
 
 .black_background {
   background: #121212;
 }
 
-.container-contacts {
+.wrapper-contacts {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -230,27 +249,28 @@ a.project-show-all {
   width: 100%;
 }
 
-.container-contacts img {
+.wrapper-contacts img {
   max-width: 2.4rem;
   margin-bottom: 1.2rem;
 }
 
-.container-contacts h3 {
-  font-size: 60px;
-  line-height: 60px;
+.wrapper-contacts h3 {
+  font-size: 6rem;
+  line-height: 6rem;
   margin-bottom: 3rem;
   letter-spacing: -0.03em;
 }
 
-.container-contacts a {
+.wrapper-contacts a {
   color: #121212;
   text-decoration: none;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 6rem;
+  line-height: 6rem;
   margin-bottom: 3rem;
   letter-spacing: -0.03em;
   border: none;
 }
+
 footer {
   margin-top: 3rem;
   display: flex;
@@ -268,7 +288,15 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: #969696;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
 footer p {
@@ -277,4 +305,161 @@ footer p {
   line-height: 2.7rem;
   letter-spacing: -0.03em;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 60rem) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .header-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-left img {
+    width: auto;
+    height: 3rem;
+  }
+
+  .wrapper-main {
+    margin-bottom: 10rem;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    letter-spacing: -0.03em;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .wrapper-about_us {
+    margin-bottom: 10rem;
+  }
+
+  .background-chair {
+    height: 74vw;
+    max-height: 50rem;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url(../Resources/Photos/Chair.png) center center/cover no-repeat;
+  }
+
+  .background-chair p {
+    color: #fff;
+    max-width: 43rem;
+    margin: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .wrapper-about_us a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project img {
+    height: 50vw;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+    line-height: 4rem;
+  }
+
+  .wrapper-projects {
+    margin-bottom: 8rem;
+  }
+
+  .project {
+    margin-bottom: 8rem;
+  }
+
+  a.project-show_all {
+    font-size: 2.5rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .wrapper-services {
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .wrapper-services h2 {
+    margin-top: 8rem;
+  }
+
+  .wrapper-services img {
+    height: 30vw;
+    object-fit: cover;
+  }
+
+  .wrapper-single_project {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+  }
+
+  .wrapper-single_project img {
+    height: 74vw;
+    object-fit: cover;
+  }
+
+  .wrapper-single_project h3 {
+    color: #fff;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    max-width: 31rem;
+  }
+
+  .wrapper-contacts {
+    margin-bottom: 10rem;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .wrapper-contacts img {
+    display: none;
+  }
+
+  .wrapper-contacts h3 {
+    font-size: 3.1rem;
+    line-height: 3.1rem;
+    margin-bottom: 3rem;
+    letter-spacing: -0.03em;
+  }
+  .wrapper-contacts a {
+    font-size: 3.1rem;
+    line-height: 3.1rem;
+  }
+
+  .footer-links {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
 }

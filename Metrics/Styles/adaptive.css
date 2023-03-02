@@ -1,0 +1,194 @@
+@media (max-width: 60rem) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 5rem;
+      margin-bottom: 5rem;
+    }
+  
+    .header-right {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-left img {
+      width: auto;
+      height: 3rem;
+    }
+  
+    .wrapper-main {
+      margin-bottom: 8rem;
+    }
+  
+    h1 {
+      font-size: 2.3rem;
+      line-height: 3rem;
+      font-weight: 500;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+      letter-spacing: -0.03em;
+      justify-content: start;
+      text-align: center;
+    }
+  
+    .wrapper-about_us {
+      margin-bottom: 10rem;
+    }
+  
+    .background-chair {
+      height: 93vw;
+      max-height: 50rem;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 40%,
+          rgba(0, 0, 0, 0.6) 100%
+        ),
+        url(../Resources/Photos/Chair.png) center center/cover no-repeat;
+    }
+  
+    .background-chair p {
+      color: #fff;
+      max-width: 43rem;
+      margin: 2.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  
+    p {
+      font-size: 2.4rem;
+      line-height: 3.5rem;
+    }
+  
+    .wrapper-about_us {
+      margin-bottom: 8rem;
+    }
+  
+    .wrapper-about_us a {
+      width: 100%; 
+      text-align: center;
+    }
+  
+    .wrapper-about_us a:hover {
+      background-color: #ca1e1e;
+      font-size: 2.1rem;
+      transition: 0.3s;
+    }
+  
+    .project img {
+      height: 50vw;
+      object-fit: cover;
+    }
+  
+    h3 {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  
+    .wrapper-projects {
+      margin-bottom: 4rem;
+    }
+  
+    .project {
+      margin-bottom: 5rem;
+    }
+  
+    .project:nth-child(4){
+      margin-bottom: 8rem;
+    }
+  
+    a.project-show_all {
+      font-size: 2.4rem;
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem;
+    }
+  
+    a.project-show_all:hover {
+      font-size: 2.5rem;
+    }
+  
+    .wrapper-services {
+      align-items: center;
+      margin-bottom: 0;
+    }
+  
+    .wrapper-services h2 {
+      margin-top: 4rem;
+    }
+  
+    .service:nth-child(5) {
+      margin-bottom:4rem ;
+    }
+  
+    .wrapper-services img {
+      height: 30vw;
+      object-fit: cover;
+    }
+  
+    .wrapper-single_project {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+    }
+  
+    .wrapper-single_project-img a {
+      max-width: 21rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      bottom: 2.5rem;
+      left: 2.5rem;
+    }
+  
+    .wrapper-single_project img {
+      height: 74vw;
+      object-fit: cover;
+    }
+  
+    .wrapper-single_project h3 {
+      color: #fff;
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      max-width: 31rem;
+    }
+  
+    .wrapper-contacts {
+      margin-bottom: 0;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .wrapper-contacts img {
+      display: none;
+    }
+  
+    .wrapper-contacts a {
+      font-size: 3.1rem;
+      line-height: 3.1rem;
+      margin-bottom: 4rem;
+      letter-spacing: -0.03em;
+    }
+  
+    footer{
+      margin-top: 0;
+    }
+  
+    .footer-links {
+      font-size: 1.4rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      gap: 2rem;
+    }
+  
+    footer p {
+  
+      font-size: 1.5rem;
+      line-height: 2.7rem;
+      margin-bottom: 4rem;
+    }
+  }
+  

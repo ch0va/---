@@ -340,3 +340,7 @@ footer p {
 .fixed {
   position: fixed;
 }
+
+#mobile-header {
+  display: none;
+}

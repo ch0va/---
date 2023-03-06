@@ -42,8 +42,8 @@ a {
 }
 
 a:hover {
-  color: #888888;
-  border-bottom: 0.1rem solid #888888;
+  border-bottom: 0.1rem solid #121212;
+  opacity: 0.5;
   transition: 0.3s;
 }
 
@@ -53,18 +53,23 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 7rem;
-  margin-top: 3.3rem;
+  margin-top: 3.282rem;
 }
 
 .header__left img {
-  width: auto;
-  height: 1.9rem;
+  width: 12.689rem;
+  height: 2.142rem;
 }
 
 .header__right {
   display: flex;
   flex-wrap: wrap;
   gap: 6rem;
+}
+
+.header__right ::after {
+  width: 10rem;
+  height: 10rem;
 }
 
 .header__right a {
@@ -108,6 +113,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+  line-height: 2.459rem;
   margin-bottom: 3rem;
   justify-content: start;
 }
@@ -128,23 +134,26 @@ h2 {
 
 p {
   font-size: 4.5rem;
-  line-height: 6.14rem;
-  margin-bottom: 3rem;
+  line-height: 6.147rem;
+  margin-bottom: 2.8rem;
 }
 
 .wrapper__about-us a {
   width: fit-content;
   background-color: #ad1818;
+  width: 25.5rem;
+  height: 6.7rem;
   color: #fff;
   padding: 2rem 4rem;
   text-decoration: none;
   font-size: 2rem;
-  line-height: 2.73rem;
+  line-height: 2.732rem;
   border-radius: 0.5rem;
   transition: 0.3s;
 }
 
 .wrapper__about-us a:hover {
+  opacity: 1;
   border-bottom: none;
 }
 
@@ -165,7 +174,7 @@ p {
 
 h3 {
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 4.098rem;
   margin-bottom: 1.5rem;
 }
 
@@ -174,13 +183,18 @@ h3 {
   color: #ad1818;
   text-decoration: none;
   font-size: 2rem;
-  line-height: 2.73rem;
+  line-height: 2.732rem;
   margin-bottom: 9rem;
 
   transition: 0.3s;
 }
 
+.project a:hover {
+  opacity: 1;
+}
+
 a.project__btn-show-all {
+  width: 100%;
   font-size: 3rem;
   text-align: center;
   padding-top: 5.6rem;
@@ -193,6 +207,7 @@ a.project__btn-show-all {
 }
 
 a.project__btn-show-all:hover {
+  opacity: 1;
   text-decoration: none;
   color: #fff;
   background-color: #ad1818;
@@ -234,6 +249,7 @@ a.project__btn-show-all:hover {
 }
 
 .wrapper__single-project:hover {
+  opacity: 1;
   border-bottom: none;
 }
 
@@ -319,4 +335,8 @@ footer p {
   font-size: 2rem;
   line-height: 2.7rem;
   margin-bottom: 3rem;
+}
+
+.fixed {
+  position: fixed;
 }

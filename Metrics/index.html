@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/adaptive.css">
+    <link rel="stylesheet" href="Styles/test.css">
     <link rel="icon" href="./Resources/Objects/Metrica_favicon/Favicon-logo.png">
     <title>Metrica</title>
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
         <header class="header container">
             <div class="header__left">
@@ -23,8 +24,9 @@
                     alt="Логотип студии дизайна интерьера Метрика"
                     srcset="Resources/Objects/Metrica_logo/Metrica_logo@2x.png 2x">
             </div>
+
             <nav class="header__right">
-                <a href="#about_us">О НАС</a>
+                <a href="#about-us">О НАС</a>
                 <a href="#projects">ПРОЕКТЫ</a>
                 <a href="#services">УСЛУГИ</a>
                 <a href="#contacts">КОНТАКТЫ</a>
@@ -32,6 +34,19 @@
         </header>
     </div>
 
+    <nav id="mobile-header">
+
+        <a href="#about-us">О НАС</a></div>
+        <a href="#projects">ПРОЕКТЫ</a>
+        <a href="#services">УСЛУГИ</a>
+        <a href="#contacts">КОНТАКТЫ</a>
+        <div id="toggle">
+            <input type="checkbox">
+            <span></span>
+        </div>
+    </nav>
+
+    <div id="blackout"></div>
     <div class="wrapper">
         <div class="wrapper__main  container">
             <h1>Современные и стильные <br>интерьеры для комфортной жизни</h1>
@@ -45,9 +60,11 @@
     <div class="wrapper">
         <div id="about-us" class="wrapper__about-us container">
             <h2>О НАС</h2>
-            <p>Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К нам обращаются
+            <p>Студия основана в 2011 году. Полностью отдаемся проектированию и реализации интерьеров. К нам
+                обращаются
                 за
-                уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого интерьера,
+                уютом, индивидуальными решениями и практичностью. Находим конструктивные решения для каждого
+                интерьера,
                 вплоть до каждой детали — нацелены на результат.</p>
             <a href="/">Посмотреть услуги</a>
         </div>
@@ -142,6 +159,7 @@
         </div>
     </div>
 
+    <script src="Scripts/script.js"></script>
 </body>
 
 </html>

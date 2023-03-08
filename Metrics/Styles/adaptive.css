@@ -17,14 +17,20 @@
     z-index: 1;
   }
 
-  #toggle {
+  #mobile-header.active {
+    top: 9.3rem;
+    transition: all 600ms ease-in-out;
+    padding-bottom: 3.3rem;
+  }
+
+  .header__toggle {
     position: relative;
     width: 4rem;
     height: 4rem;
     transition: all 300ms ease-in-out;
   }
 
-  #toggle input {
+  .header__input {
     position: absolute;
     top: -10px;
     left: -10px;
@@ -35,8 +41,8 @@
     cursor: pointer;
   }
 
-  #mobile-header span::after,
-  #mobile-header span::before {
+  .header__span::after,
+  .header__span::before {
     position: absolute;
     display: block;
     content: "";
@@ -48,23 +54,17 @@
     transition: all 0.3s;
   }
 
-  #mobile-header span::before {
+  .header__span::before {
     transform: rotate(-45deg);
     left: 15px;
   }
 
-  #mobile-header.active {
-    top: 9.3rem;
-    transition: all 600ms ease-in-out;
-    padding-bottom: 3.3rem;
-  }
-
-  #toggle input:checked + span::after {
+  .header__input:checked + .header__span::after {
     transform: rotate(-45deg);
     top: 3px;
   }
 
-  #toggle input:checked + span::before {
+  .header__input:checked + .header__span::before {
     transform: rotate(45deg);
     top: 3px;
   }
@@ -74,7 +74,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 200rem;
+    height: 100%;
     background-color: transparent;
     transition: all 400ms;
   }
@@ -83,7 +83,7 @@
     visibility: inherit;
     display: block;
     width: 100%;
-    height: 200rem;
+    height: 100%;
     position: absolute;
     background-color: #121212;
     opacity: 50%;
@@ -91,7 +91,7 @@
     transition: all 400ms;
   }
 
-  span {
+  .header__span {
     position: absolute;
     margin-top: 1rem;
     left: 0;
@@ -109,44 +109,32 @@
     margin-top: 0;
   }
 
-  .header__right {
+  .header__navigation {
     display: none;
   }
 
-  a {
+  .link {
     width: fit-content;
     border-bottom: 0.1rem solid transparent;
   }
 
-  .header__left img {
+  .header__logo{
     width: auto;
     height: 3rem;
   }
 
-  .wrapper__main {
+  .main {
     margin-top: 3.3rem;
     margin-bottom: 8rem;
   }
 
-  h1 {
+  .h1 {
     font-size: 2.3rem;
     line-height: 3rem;
     font-weight: 500;
   }
 
-  h2 {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    letter-spacing: -0.03em;
-    justify-content: start;
-    text-align: center;
-  }
-
-  .wrapper__about-us {
-    margin-bottom: 10rem;
-  }
-
-  .background-chair {
+  .main__image {
     height: 93vw;
     max-height: 50rem;
     background: linear-gradient(
@@ -157,7 +145,7 @@
       url(../Resources/Photos/Chair.png) center center/cover no-repeat;
   }
 
-  .background-chair p {
+  .main__paragraph{
     color: #fff;
     max-width: 43rem;
     margin: 2.5rem;
@@ -165,72 +153,84 @@
     line-height: 2rem;
   }
 
-  p {
+  .h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    letter-spacing: -0.03em;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .about-us {
+    margin-bottom: 10rem;
+  }
+
+  .about-us__paragraph {
     font-size: 2.4rem;
     line-height: 3.5rem;
   }
 
-  .wrapper__about-us {
+  .about-us {
     margin-bottom: 8rem;
   }
 
-  .wrapper__about-us a {
+  .about-us a {
     width: 100%;
     text-align: center;
   }
 
-  .project img {
+  .project {
+    margin-bottom: 4rem;
+  }
+
+  .project__item {
+    margin-bottom: 5rem;
+  }
+
+  .project__image {
     height: 50vw;
     object-fit: cover;
   }
 
-  h3 {
+  .h3 {
     font-size: 2rem;
     line-height: 3rem;
   }
 
-  .wrapper__projects {
-    margin-bottom: 4rem;
-  }
-
-  .project {
-    margin-bottom: 5rem;
-  }
-
-  .project:nth-child(4) {
+  .project__item:nth-child(4) {
     margin-bottom: 8rem;
   }
 
-  a.project__btn-show-all {
+  .project__show-all {
     font-size: 2.4rem;
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
   }
 
-  .wrapper__services {
+  .service{
     align-items: center;
     margin-bottom: 0;
   }
 
-  .wrapper__services h2 {
-    margin-top: 4rem;
-  }
-
-  .service:nth-child(5) {
-    margin-bottom: 4rem;
-  }
-
-  .wrapper__services img {
+  .service__image {
     height: 30vw;
     object-fit: cover;
   }
 
-  .wrapper__single-project {
+  .h2  {
+    margin-top: 4rem;
+  }
+
+  .service__item:nth-child(5) {
+    margin-bottom: 4rem;
+  }
+
+  .single-project {
     margin-top: 4rem;
     margin-bottom: 8rem;
   }
 
-  .wrapper__single-project p {
+  .single-project__paragraph {
     max-width: 21rem;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -239,12 +239,12 @@
     margin-bottom: 0;
   }
 
-  .wrapper__single-project img {
+  .single-project__image {
     height: 74vw;
     object-fit: cover;
   }
 
-  .wrapper__single-project h3 {
+  .single-project__paragraph {
     color: #fff;
     position: absolute;
     left: 2rem;
@@ -252,7 +252,7 @@
     max-width: 31rem;
   }
 
-  .wrapper__contacts {
+  .contact {
     margin-bottom: 0;
     justify-content: center;
     align-self: center;
@@ -260,11 +260,11 @@
     width: 100%;
   }
 
-  .wrapper__contacts img {
+  .contact__icon {
     display: none;
   }
 
-  .wrapper__contacts a {
+  .contact__link{
     font-size: 3.1rem;
     line-height: 3.1rem;
     margin-bottom: 4rem;
@@ -275,14 +275,14 @@
     margin-top: 0;
   }
 
-  .footer__links {
+  .footer__navigation {
     font-size: 1.4rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
     gap: 2rem;
   }
 
-  footer p {
+  .footer__paragraph {
     font-size: 1.5rem;
     line-height: 2.7rem;
     margin-bottom: 4rem;

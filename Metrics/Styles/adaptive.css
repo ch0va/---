@@ -39,6 +39,7 @@
     z-index: 1;
     opacity: 0;
     cursor: pointer;
+    
   }
 
   .header__span::after,
@@ -51,7 +52,11 @@
     width: 25px;
     height: 5px;
     top: 5px;
-    transition: all 0.3s;
+    transition: all 800ms;
+  }
+
+  .arrow-animation {
+    animation:  bounce 5s;
   }
 
   .header__span::before {
@@ -74,7 +79,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: transparent;
     transition: all 400ms;
   }
@@ -83,8 +88,8 @@
     visibility: inherit;
     display: block;
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     background-color: #121212;
     opacity: 50%;
     z-index: 0;
@@ -118,7 +123,7 @@
     border-bottom: 0.1rem solid transparent;
   }
 
-  .header__logo{
+  .header__logo {
     width: auto;
     height: 3rem;
   }
@@ -145,7 +150,7 @@
       url(../Resources/Photos/Chair.png) center center/cover no-repeat;
   }
 
-  .main__paragraph{
+  .main__paragraph {
     color: #fff;
     max-width: 43rem;
     margin: 2.5rem;
@@ -202,12 +207,14 @@
   }
 
   .project__show-all {
+    height: fit-content;
     font-size: 2.4rem;
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
   }
 
-  .service{
+  .service {
+    margin-top: 4rem;
     align-items: center;
     margin-bottom: 0;
   }
@@ -217,26 +224,12 @@
     object-fit: cover;
   }
 
-  .h2  {
-    margin-top: 4rem;
-  }
-
   .service__item:nth-child(5) {
     margin-bottom: 4rem;
   }
 
   .single-project {
-    margin-top: 4rem;
     margin-bottom: 8rem;
-  }
-
-  .single-project__paragraph {
-    max-width: 21rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    bottom: 2.5rem;
-    left: 2.5rem;
-    margin-bottom: 0;
   }
 
   .single-project__image {
@@ -246,25 +239,27 @@
 
   .single-project__paragraph {
     color: #fff;
+    max-width: 21rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     position: absolute;
-    left: 2rem;
+    left: 3rem;
     bottom: 2rem;
-    max-width: 31rem;
+    margin-bottom: 0;
   }
 
   .contact {
     margin-bottom: 0;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
     width: 100%;
   }
 
-  .contact__icon {
+  .contact::before{
     display: none;
   }
 
-  .contact__link{
+  .contact__link {
+    text-align: center;
+    width: 100%;
     font-size: 3.1rem;
     line-height: 3.1rem;
     margin-bottom: 4rem;

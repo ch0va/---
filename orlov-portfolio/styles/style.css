@@ -1,0 +1,11 @@
+.container {
+    max-width: 1600px;
+}
+
+.bio__background-img {
+    position: relative;
+}
+
+.bio__info {
+    position: absolute;
+}

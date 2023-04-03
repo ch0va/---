@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-size: 1.9rem;
+  font-size: 19px;
   align-items: center;
   font-weight: 400;
   font-style: normal;
@@ -23,17 +23,21 @@ a {
   letter-spacing: -0.03em;
 }
 
+.span {
+  white-space: nowrap;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Manrope";
   font-style: normal;
-  padding: 0 3.3rem;
+  padding: 0 33px;
 }
 
 .container {
-  max-width: 115rem;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -42,55 +46,55 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 7rem;
-  margin-top: 3.7rem;
+  margin-bottom: 70px;
+  margin-top: 37px;
 }
 
 .header__logo {
-  width: 12.7rem;
-  height: 2rem;
+  width: 127px;
+  height: 20px;
 }
 
 .header__navigation {
   display: flex;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 60px;
 }
 
 .header__right ::after {
-  width: 10rem;
-  height: 10rem;
+  width: 100px;
+  height: 100px;
 }
 
-.link{
+.link {
   color: #121212;
   transition: all 0.3s;
-  font-size: 1.8rem;
+  font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.link:hover{
+.link:hover {
   transition: all 0.3s;
   opacity: 0.5;
   border-bottom: 1px solid #121212;
 }
 
-.link:visited{
+.link:visited {
   color: #121212;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15rem;
+  margin-bottom: 150px;
   width: 100%;
 }
 
 .h1 {
-  font-size: 6rem;
-  line-height: 6rem;
-  margin-bottom: 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
 
 .main__image {
@@ -104,21 +108,21 @@ a {
     url(../Resources/Photos/Chair.png) center center/cover no-repeat;
   width: 100%;
   height: 50vw;
-  max-height: 50rem;
+  max-height: 500px;
 }
 
 .main__paragraph {
   color: #fff;
-  max-width: 43rem;
-  margin: 4rem;
-  font-size: 2rem;
-  line-height: 2.73rem;
+  max-width: 430px;
+  margin: 40px;
+  font-size: 20px;
+  line-height: 27px;
 }
 
 .h2 {
-  font-size: 1.8rem;
-  line-height: 2.459rem;
-  margin-bottom: 3rem;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
   justify-content: start;
   text-transform: uppercase;
 }
@@ -127,27 +131,26 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15rem;
+  margin-bottom: 150px;
 }
 
 .about-us__paragraph {
-  max-width: 105rem;
-  font-size: 4.5rem;
-  line-height: 6.147rem;
-  margin-bottom: 2.8rem;
+  max-width: 1050px;
+  font-size: 45px;
+  line-height: 61.47px;
+  margin-bottom: 28px;
 }
 
-.about-us__link{
-  width: fit-content;
+.about-us__link {
   background-color: #ad1818;
-  width: 25.5rem;
-  height: 6.7rem;
+  width: 255px;
+  height: 67px;
   color: #fff;
-  padding: 2rem 4rem;
+  padding: 20px 40px;
   text-decoration: none;
-  font-size: 2rem;
-  line-height: 2.732rem;
-  border-radius: 0.5rem;
+  font-size: 20px;
+  line-height: 27px;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
@@ -159,36 +162,38 @@ a {
 .project {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15rem;
+  margin-bottom: 150px;
+  width: 100%;
 }
 
 .project__item {
-  margin-bottom: 9rem;
+  margin-bottom: 90px;
 }
 
 .project__image {
+  object-fit: cover;
+  object-position: 0 -228px;
   width: 100%;
-  margin-bottom: 1.2rem;
+  max-height: 450px;
+  margin-bottom: 12px;
 }
 
 .project__h3 {
   text-transform: uppercase;
-} 
-
-.h3 {
-  font-size: 3rem;
-  line-height: 4.098rem;
-  margin-bottom: 1.5rem;
 }
 
-.project__link{
+.h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.project__link {
   border: none;
   color: #ad1818;
   text-decoration: none;
-  font-size: 2rem;
-  line-height: 2.732rem;
-  margin-bottom: 9rem;
-
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 90px;
   transition: 0.3s;
 }
 
@@ -196,52 +201,120 @@ a {
   opacity: 1;
 }
 
-.project__show-all {
+.full-container-btn {
+  cursor: pointer;
   width: 100%;
-  height: 15rem;
-  font-size: 3rem;
+  height: 150px;
+  font-size: 30px;
   text-align: center;
-  padding-top: 5.6rem;
-  padding-bottom: 5.6rem;
-  border: 0.1rem solid #ad1818;
+  padding-top: 56px;
+  padding-bottom: 56px;
   text-decoration: none;
-  color: #ad1818;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
-.project__show-all:hover {
+.full-container-btn:hover {
   opacity: 1;
   text-decoration: none;
-  color: #fff;
-  background-color: #ad1818;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
-.service{
-  margin-top: 15rem;
+.project__show-all {
+  border: 1px solid #ad1818;
+  text-decoration: none;
+  color: #ad1818;
+}
+
+.project__show-all:hover {
+  color: #fff;
+  background-color: #ad1818;
+}
+
+.service {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
   background-color: #121212;
   align-items: start;
-  margin-bottom: 9rem;
+  margin-bottom: 90px;
 }
 
-.service__h2  {
-  margin-bottom: 3.4rem;
+.service__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.service__item {
+  position: relative;
+  max-width: 570px;
+  margin-bottom: 40px;
+}
+
+.service__h3 {
+  max-width: 340px;
 }
 
 .service__image {
   width: 100%;
-  height: 27rem;
+  height: 390px;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
 }
 
-.service__item {
-  margin-bottom: 4.2rem;
+.service__price {
+  position: absolute;
+  color: #fff;
+  background: #ad1818;
+  border-radius: 5px;
+  top: 30px;
+  left: 30px;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 5px 22px;
+  width: fit-content;
+}
+
+.service__btn {
+  border: 1px solid #ad1818;
+  color: #fff;
+  background-color: #ad1818;
+}
+
+.comments {
+  margin: 150px 0;
+  width: 100%;
+}
+
+.comments__flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.comment__item {
+  max-width: 530px;
+}
+
+.comment__item:nth-last-child(1){
+  max-width: 860px;
+}
+
+.comment__header {
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+
+.comment__text {
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .single-project {
@@ -250,9 +323,7 @@ a {
 
 .single-project__image {
   width: 100%;
-  max-height: 71.7rem;
-  object-fit: cover;
-  
+  max-height: 717px;
 }
 
 .single-project:hover {
@@ -261,12 +332,12 @@ a {
 }
 
 .single-project__paragraph {
-  color:#fff;
+  color: #fff;
   position: absolute;
-  font-size: 3rem;
-  line-height: 4.1rem;
-  max-width: 44rem;
-  bottom: 6rem;
+  font-size: 30px;
+  line-height: 41px;
+  max-width: 440px;
+  bottom: 60px;
 }
 
 .black-background {
@@ -277,46 +348,46 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 13.4rem;
+  margin-bottom: 134px;
   width: 100%;
 }
 
-.contact::before{
+.contact::before {
   content: "";
-  width: 1.3rem;
-  height: 2.2rem;
-  background: url(../Resources/Objects/Phone_logo/Phone_logo@2x.png) center center/cover no-repeat;
-  margin-bottom: 1.3rem;
-  margin-top: 15rem;
+  width: 13px;
+  height: 22px;
+  background: url(../Resources/Objects/Phone_logo/Phone_logo@2x.png) center
+    center/cover no-repeat;
+  margin-bottom: 13px;
+  margin-top: 150px;
 }
-
 
 .contact__h3 {
   text-transform: uppercase;
-  font-size: 6rem;
-  line-height: 6rem;
-  margin-bottom: 3rem;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
 
-.contact__link{
+.contact__link {
   width: fit-content;
   color: #121212;
   text-decoration: none;
-  font-size: 6rem;
-  line-height: 6rem;
-  margin-bottom: 2.3rem;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 23px;
   transition: 0.3s;
-  border: 0.3rem solid transparent;
+  border: 03px solid transparent;
 }
 
 .contact__link:hover {
   transition: all 0.3s;
   opacity: 0.5;
-  border-bottom: 0.3rem solid #121212;
+  border-bottom: 03px solid #121212;
 }
 
 footer {
-  padding-top: 6rem;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,14 +395,14 @@ footer {
 }
 
 .footer__navigation {
-  margin-bottom: 9rem;
+  margin-bottom: 90px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 5.3rem;
+  gap: 53px;
 }
 
-.footer__link{
+.footer__link {
   color: #fff;
   transition: 0.3s;
   text-decoration: none;
@@ -347,9 +418,9 @@ footer {
 
 .footer__paragraph {
   color: #898989;
-  font-size: 2rem;
-  line-height: 2.7rem;
-  margin-bottom: 3rem;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 30px;
 }
 
 .fixed {
@@ -357,5 +428,5 @@ footer {
 }
 
 #mobile-header {
-  display: none ;
+  display: none;
 }

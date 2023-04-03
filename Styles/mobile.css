@@ -1,32 +1,46 @@
-@media (max-width: 60rem) {
+@media (max-width: 500px) {
+  html {
+    background: rgb(203, 172, 255);
+  }
+
+  .container {
+    max-width: 351px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
   #mobile-header {
     display: flex;
     position: absolute;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 3.3rem;
+    gap: 33px;
     margin: 0 auto;
-    top: -11.7rem;
+    top: -117px;
     left: 0;
     right: 0;
     background: white;
     display: flex;
     transition: all 600ms ease-in-out;
-    padding-bottom: 1rem;
+    padding-bottom: 10px;
     z-index: 1;
   }
 
   #mobile-header.active {
-    top: 9.3rem;
+    top: 93px;
     transition: all 600ms ease-in-out;
-    padding-bottom: 3.3rem;
+    padding-bottom: 33px;
   }
 
   .header__toggle {
     position: relative;
-    width: 4rem;
-    height: 4rem;
+    width: 40px;
+    height: 40px;
     transition: all 300ms ease-in-out;
   }
 
@@ -39,7 +53,6 @@
     z-index: 1;
     opacity: 0;
     cursor: pointer;
-    
   }
 
   .header__span::after,
@@ -56,7 +69,7 @@
   }
 
   .arrow-animation {
-    animation:  bounce 5s;
+    animation: bounce 5s;
   }
 
   .header__span::before {
@@ -98,7 +111,7 @@
 
   .header__span {
     position: absolute;
-    margin-top: 1rem;
+    margin-top: 10px;
     left: 0;
   }
 
@@ -106,11 +119,11 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    gap: 5rem;
-    margin-bottom: 5rem;
+    gap: 50px;
+    margin-bottom: 50px;
     background-color: #fff;
     z-index: 2;
-    padding-top: 3.3rem;
+    padding-top: 33px;
     margin-top: 0;
   }
 
@@ -120,116 +133,143 @@
 
   .link {
     width: fit-content;
-    border-bottom: 0.1rem solid transparent;
+    border-bottom: 1px solid transparent;
   }
 
   .header__logo {
     width: auto;
-    height: 3rem;
+    height: 30px;
   }
 
   .main {
-    margin-top: 3.3rem;
-    margin-bottom: 8rem;
+    margin-top: 33px;
+    margin-bottom: 80px;
   }
 
   .h1 {
-    font-size: 2.3rem;
-    line-height: 3rem;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 500;
   }
 
   .main__image {
-    height: 93vw;
-    max-height: 50rem;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 40%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      url(../Resources/Photos/Chair.png) center center/cover no-repeat;
+    max-height: 350px;
+    height: 300px;
   }
 
   .main__paragraph {
-    color: #fff;
-    max-width: 43rem;
-    margin: 2.5rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    max-width: 430px;
+    margin: 25px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .h2 {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    letter-spacing: -0.03em;
-    justify-content: start;
-    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: start;
   }
 
   .about-us {
-    margin-bottom: 10rem;
+    margin-bottom: 80px;
   }
 
   .about-us__paragraph {
-    font-size: 2.4rem;
-    line-height: 3.5rem;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .about-us {
-    margin-bottom: 8rem;
+    margin-bottom: 80px;
   }
 
-  .about-us a {
+  .about-us__link {
     width: 100%;
+    height: 50px;
+    padding: 15px 47px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 3.8px;
     text-align: center;
   }
 
   .project {
-    margin-bottom: 4rem;
+    margin-bottom: 80px;
   }
 
   .project__item {
-    margin-bottom: 5rem;
+    margin-bottom: 80px;
   }
 
   .project__image {
-    height: 50vw;
+    margin-bottom: 20px;
+    height: 250px;
+    object-position: -20px 0;
     object-fit: cover;
   }
 
   .h3 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  .project__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .full-container-btn {
+    height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .project__item:nth-child(4) {
-    margin-bottom: 8rem;
+    margin-bottom: 60px;
   }
 
   .project__show-all {
     height: fit-content;
-    font-size: 2.4rem;
-    padding-top: 3.2rem;
-    padding-bottom: 3.2rem;
+    font-size: 22px;
+    padding: 37px 0;
   }
 
   .service {
-    margin-top: 4rem;
-    align-items: center;
-    margin-bottom: 0;
+    margin-top: 80px;
+    align-items: start;
+    text-align: left;
+    margin-bottom: 80px;
   }
 
   .service__image {
-    height: 30vw;
+    width: 100%;
+    max-width: 350px;
+    height: 240px;
     object-fit: cover;
   }
 
+  .service__item {
+    margin-bottom: 50px;
+  }
+
   .service__item:nth-child(5) {
-    margin-bottom: 4rem;
+    margin-bottom: 40px;
+  }
+
+  .service__price {
+    top: 24px;
+    left: 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .single-project {
-    margin-bottom: 8rem;
+    margin-bottom: 80px;
   }
 
   .single-project__image {
@@ -239,13 +279,38 @@
 
   .single-project__paragraph {
     color: #fff;
-    max-width: 21rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    max-width: 210px;
+    font-size: 15px;
+    line-height: 20px;
     position: absolute;
-    left: 3rem;
-    bottom: 2rem;
+    left: 30px;
+    bottom: 20px;
     margin-bottom: 0;
+  }
+
+  .comments {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+
+  .comments__flex {
+    gap: 0px;
+    height: fit-content;
+  }
+
+  .comment__header {
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .comment__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .comment__item {
+    margin-bottom: 80px;
   }
 
   .contact {
@@ -253,16 +318,16 @@
     width: 100%;
   }
 
-  .contact::before{
+  .contact::before {
     display: none;
   }
 
   .contact__link {
     text-align: center;
     width: 100%;
-    font-size: 3.1rem;
-    line-height: 3.1rem;
-    margin-bottom: 4rem;
+    font-size: 31px;
+    line-height: 31px;
+    margin-bottom: 40px;
     letter-spacing: -0.03em;
   }
 
@@ -271,15 +336,15 @@
   }
 
   .footer__navigation {
-    font-size: 1.4rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    gap: 2rem;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
   }
 
   .footer__paragraph {
-    font-size: 1.5rem;
-    line-height: 2.7rem;
-    margin-bottom: 4rem;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 40px;
   }
 }

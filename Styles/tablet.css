@@ -1,8 +1,4 @@
 @media (max-width: 960px) {
-  html {
-    background: rgb(180, 255, 245);
-  }
-
   .container {
     max-width: 930px;
     margin-left:15px;

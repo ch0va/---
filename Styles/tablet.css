@@ -1,12 +1,10 @@
 @media (max-width: 960px) {
   .container {
     max-width: 930px;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 
   .wrapper {
-    padding: 0;
+    padding: 15px;
     margin: 0;
   }
 

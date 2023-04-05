@@ -1,12 +1,10 @@
 @media (max-width: 500px) {
   .container {
     max-width: 350px;
-    margin-left: 12px;
-    margin-right: 12px;
   }
 
   .wrapper {
-    padding: 0;
+    padding: 12px;
   }
 
   #mobile-header {
@@ -244,6 +242,7 @@
 
   .service__flex {
     gap: 0;
+    flex-wrap: wrap;
   }
 
   .service__image {
@@ -304,6 +303,7 @@
     gap: 0px;
     height: fit-content;
     margin-bottom: 0px;
+    flex-wrap: wrap;
   }
 
   .comment__header {

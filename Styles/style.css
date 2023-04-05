@@ -250,7 +250,7 @@ a {
 .service__flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   margin-bottom: 24px;
 }
@@ -294,7 +294,6 @@ a {
 .comments__flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   column-gap: 50px;
   row-gap: 80px;
 }

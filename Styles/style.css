@@ -176,7 +176,6 @@ a {
 
 .project__image {
   object-fit: cover;
-  object-position: 0 -228px;
   width: 100%;
   max-height: 450px;
   margin-bottom: 12px;
@@ -201,6 +200,7 @@ a {
   margin-bottom: 90px;
   transition: 0.3s;
 }
+
 
 .project__link:hover {
   opacity: 1;
@@ -252,13 +252,13 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .service__item {
   position: relative;
   max-width: 570px;
-  margin-bottom: 58px;
+  margin-bottom: 45px;
 }
 
 .service__image {
@@ -300,6 +300,7 @@ a {
 
 .comment__item {
   max-width: 530px;
+  margin-bottom: 83px;
 }
 
 .comment__item:nth-last-child(1) {

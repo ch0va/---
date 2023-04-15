@@ -4,7 +4,7 @@
   }
 
   .wrapper {
-    padding: 15px;
+    padding: 0 15px;
     margin: 0;
   }
 
@@ -20,6 +20,13 @@
 
   .main__image {
     max-height: 400px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../Resources/Photos/Main/Chair-background/chair-background-tablet.png)
+        center center/cover no-repeat;
   }
 
   .main__paragraph {
@@ -64,16 +71,28 @@
     height: 450px;
   }
 
+  .project__link {
+    line-height: 27px;
+  }
+
   .service {
     margin-bottom: 120px;
+  }
+
+  .service__flex {
+    margin-bottom: 0;
+  }
+
+  .service__h3 {
+    margin-bottom: 0;
   }
 
   .service__price {
     font-size: 20px;
     line-height: 27px;
-    top: 30px;
+    top: 33px;
     left: 30px;
-    padding: 7px 26px;
+    padding: 6px 24px;
   }
 
   .service__item {
@@ -83,11 +102,16 @@
 
   .service__image {
     height: 315px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+  }
+
+  .service__btn {
+    margin-top: 0;
   }
 
   .comments {
     margin: 120px 0;
+    margin-bottom: 40px;
   }
 
   .comments__flex {
@@ -112,5 +136,54 @@
   .comment__text {
     font-size: 20px;
     line-height: 27px;
+  }
+
+  .gallery-slider {
+    height: 65vh;
+  }
+
+  .gallery-slider__header {
+    top: 82px;
+    left: 51px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .gallery-slider__project-link {
+    bottom: 80px;
+    left: 51px;
+    width: 370px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .gallery-slider__control {
+    bottom: 161px;
+    left: 52px;
+  }
+
+  .contacts {
+    margin: 120px 0;
+  }
+  
+  .contacts__flex-container {
+    gap: 120px;
+  }
+
+  .contacts__link_tel,
+  .contacts__link_mail {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .contacts__link_tel::before {
+    margin-bottom: 23px;
+  }
+  .contacts__link_mail::before {
+    margin-bottom: 23px;
+  }
+
+  .footer {
+    padding-top: 63px;
   }
 }

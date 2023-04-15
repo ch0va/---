@@ -336,7 +336,7 @@
   .gallery-slider__control {
     justify-content: space-between;
     width: 100%;
-    max-width: 92%;
+    max-width: calc(100% - 28px);
     bottom: 193px;
     left: 12px;
   }

@@ -144,7 +144,7 @@
     font-size: 30px;
     line-height: 32px;
     margin-bottom: 25px;
-    max-width: 90%;
+    max-width: 96%;
   }
 
   .main__image {
@@ -191,6 +191,7 @@
     font-size: 16px;
     line-height: 22px;
     border-radius: 3.8px;
+    text-align: center;
   }
 
   .project {

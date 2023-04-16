@@ -439,7 +439,7 @@ a {
 }
 
 .contacts__link_tel, 
-.contacts__link_mail {
+.contacts__link_telegram {
   border: 2px solid transparent;
   text-transform: none;
   font-size: 60px;
@@ -447,7 +447,7 @@ a {
 }
 
 .contacts__link_tel:hover, 
-.contacts__link_mail:hover {
+.contacts__link_telegram:hover {
   border-bottom: 2px solid #121212cc;
 }
 
@@ -461,10 +461,10 @@ a {
   margin-bottom: 6px;
 }
 
-.contacts__link_mail::before {
+.contacts__link_telegram::before {
   content: "";
   display: block;
-  background: url(../Resources/Objects/Mail_logo/mail-ico.png) center
+  background: url(../Resources/Objects/Telegram_logo/telegram-ico.png) center
   center/cover no-repeat;
   width: 24px;
   height: 18px;

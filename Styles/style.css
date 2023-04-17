@@ -1,3 +1,7 @@
+* {
+  font-family: "Manrope";
+}
+
 html {
   scroll-behavior: smooth;
   font-family: "Manrope";
@@ -10,6 +14,10 @@ body {
   align-items: center;
   font-weight: 400;
   font-style: normal;
+}
+
+.body_fixed {
+  overflow: hidden;
 }
 
 h1,
@@ -66,6 +74,14 @@ a {
 .header__right ::after {
   width: 100px;
   height: 100px;
+}
+
+.mobile-header__button {
+  display: none;
+}
+
+.mobile-header {
+  display: none;
 }
 
 .link {
@@ -284,6 +300,118 @@ a {
   background-color: #ad1818;
 }
 
+.pop-up {
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up__container {
+  margin: 90px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  display: block;
+  z-index: 4;
+  width: 780px;
+  height: 710px;
+  border-radius: 10px;
+}
+
+.pop-up__close-button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 35px;
+  top: 35px;
+}
+
+.pop-up__close-button::before,
+.pop-up__close-button::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #121212;
+  border-radius: 20px;
+  left: 3px;
+}
+
+.pop-up__close-button::after {
+  transform: rotate(45deg);
+}
+
+.pop-up__close-button::before {
+  transform: rotate(-45deg);
+}
+
+.pop-up__wrapper {
+  margin: 95px 65px 85px 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up__header {
+  width: 100%;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.pop-up__info {
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.pop-up__send-info {
+  margin-top: 30px;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: #ad1818;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.pop-up__input {
+  font-size: 25px;
+  line-height: 45px;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 45px;
+}
+
+.pop-up__input:last-child {
+  margin-bottom: 450px;
+}
+
+.pop-up__input:focus {
+  outline: none;
+}
+
+
+.pop-up_open {
+  z-index: 3;
+  visibility: visible;
+}
+
 .comments {
   margin: 150px 0;
   margin-bottom: 73px;
@@ -438,7 +566,7 @@ a {
   text-align: justify;
 }
 
-.contacts__link_tel, 
+.contacts__link_tel,
 .contacts__link_telegram {
   border: 2px solid transparent;
   text-transform: none;
@@ -446,7 +574,7 @@ a {
   line-height: 73px;
 }
 
-.contacts__link_tel:hover, 
+.contacts__link_tel:hover,
 .contacts__link_telegram:hover {
   border-bottom: 2px solid #121212cc;
 }
@@ -455,7 +583,7 @@ a {
   content: "";
   display: block;
   background: url(../Resources/Objects/Phone_logo/Phone_logo.png) center
-  center/cover no-repeat;
+    center/cover no-repeat;
   width: 13px;
   height: 22px;
   margin-bottom: 6px;
@@ -465,12 +593,11 @@ a {
   content: "";
   display: block;
   background: url(../Resources/Objects/Telegram_logo/telegram-ico.png) center
-  center/cover no-repeat;
+    center/cover no-repeat;
   width: 24px;
   height: 18px;
   margin-bottom: 6px;
 }
-
 
 footer {
   padding-top: 67px;
@@ -507,12 +634,4 @@ footer {
   font-size: 20px;
   line-height: 27px;
   margin-bottom: 30px;
-}
-
-.fixed {
-  position: fixed;
-}
-
-#mobile-header {
-  display: none;
 }

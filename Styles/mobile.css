@@ -274,6 +274,11 @@
 
   .gallery-slider {
     height: 47vh;
+    
+  }
+
+  .gallery-slider__content {
+    height: 47vh;
     min-height: 100px;
   }
 
@@ -298,7 +303,6 @@
     max-width: calc(100% - 28px);
     bottom: 193px;
     left: 12px;
-    top: 50vh;
   }
 
   .gallery-slider__control_prev,

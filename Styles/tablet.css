@@ -272,7 +272,11 @@
   }
 
   .gallery-slider {
-    height: 47vh;
+    height: 63vh;
+  }
+
+  .gallery-slider__content {
+    height: 100%;
   }
 
   .gallery-slider__header {

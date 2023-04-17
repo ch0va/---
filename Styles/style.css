@@ -485,7 +485,7 @@ a {
   color: #fff;
   font-size: 30px;
   line-height: 41px;
-  bottom: 60px;
+  bottom: 65px;
   max-width: 440px;
   transition: 0.4s;
   text-decoration: none;
@@ -551,8 +551,8 @@ a {
 }
 
 .contacts {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 145px;
+  margin-bottom: 0px;
 }
 
 .contacts__h2 {
@@ -586,7 +586,7 @@ a {
     center/cover no-repeat;
   width: 13px;
   height: 22px;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 .contacts__link_telegram::before {
@@ -596,11 +596,11 @@ a {
     center/cover no-repeat;
   width: 24px;
   height: 18px;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 footer {
-  padding-top: 67px;
+  padding-top: 55px;
   display: flex;
   flex-direction: column;
   align-items: center;

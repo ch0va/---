@@ -15,12 +15,8 @@
   }
 
   .header {
-    margin-top: 0px;
+    margin-top: 37px;
     margin-bottom: 68px;
-  }
-
-  .header__logo {
-    height: 22px;
   }
 
   .header__navigation {
@@ -276,7 +272,7 @@
   }
 
   .gallery-slider {
-    height: 65vh;
+    height: 47vh;
   }
 
   .gallery-slider__header {
@@ -287,7 +283,7 @@
   }
 
   .gallery-slider__project-link {
-    bottom: 80px;
+    bottom: 85px;
     left: 51px;
     width: 370px;
     font-size: 25px;
@@ -295,12 +291,13 @@
   }
 
   .gallery-slider__control {
-    bottom: 161px;
+    bottom: 165px;
     left: 52px;
   }
 
   .contacts {
-    margin: 120px 0;
+    margin: 113px 0;
+    margin-bottom: 0;
   }
 
   .contacts__flex-container {

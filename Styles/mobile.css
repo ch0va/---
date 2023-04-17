@@ -74,6 +74,7 @@
   }
 
   .main__paragraph {
+    max-width: 70vw;
     margin: 15px;
     font-size: 16px;
     line-height: 22px;
@@ -176,7 +177,7 @@
   .service__price {
     top: 24px;
     left: 24px;
-    padding: 4px 23px;
+    padding: 6px 23px;
     border-radius: 3.8px;
     font-size: 14px;
     line-height: 19px;
@@ -272,7 +273,7 @@
   }
 
   .gallery-slider {
-    height: 49vh;
+    height: 47vh;
     min-height: 100px;
   }
 
@@ -284,7 +285,7 @@
   }
 
   .gallery-slider__project-link {
-    bottom: 58px;
+    bottom: 60px;
     left: 13px;
     width: 280px;
     font-size: 19px;
@@ -297,6 +298,7 @@
     max-width: calc(100% - 28px);
     bottom: 193px;
     left: 12px;
+    top: 50vh;
   }
 
   .gallery-slider__control_prev,
@@ -306,7 +308,8 @@
   }
 
   .contacts {
-    margin: 82px 0;
+    margin-top: 78px;
+    margin-bottom: 0; 
   }
 
   .contacts__flex-container {
@@ -332,7 +335,7 @@
   }
 
   .footer {
-    padding-top: 26px;
+    padding-top: 32px;
   }
 
   .footer__link {

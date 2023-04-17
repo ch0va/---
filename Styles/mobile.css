@@ -7,24 +7,51 @@
     padding: 0 12px;
   }
 
-  .header__navigation {
-    display: none;
-  }
-
   
-
   .link {
     width: fit-content;
     border-bottom: 1px solid transparent;
   }
 
+  .header {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
   .header__logo {
-    width: auto;
-    height: 30px;
+    width: 95px;
+    height: 15px;
+  }
+
+  .mobile-header__button {
+    right: 6px;
+    top: 9px;
+  }
+
+  .mobile-header__button::before {
+    left:auto;
+    right: 5px;
+    width: 40px;
+  }
+
+  .mobile-header__button::after {
+    left:auto;
+    right: 5px;
+    width: 25px;
+  }
+
+  .mobile-header__button_close::before,
+  .mobile-header__button_close::after {
+    right: 10px;
+    width: 30px;
   }
 
   .main {
-    margin-top: 33px;
+    margin-top: 30px;
     margin-bottom: 80px;
   }
 

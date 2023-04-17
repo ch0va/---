@@ -15,7 +15,12 @@
   }
 
   .header {
+    margin-top: 0px;
     margin-bottom: 68px;
+  }
+
+  .header__logo {
+    height: 22px;
   }
 
   .header__navigation {

@@ -28,10 +28,12 @@
                         srcset="Resources/Objects/Metrica_logo/Metrica_logo@2x.png 2x">
                 </a>
                 <nav class="header__navigation">
-                    <a class="link" href="#about-us">О нас</a>
-                    <a class="link" href="#project">Проекты</a>
-                    <a class="link" href="#service">Услуги</a>
-                    <a class="link" href="#contacts">Контакты</a>
+                    <ul class="header__links-list">
+                        <li><a class="link" href="#about-us">О нас</a></li>
+                        <li><a class="link" href="#project">Проекты</a></li>
+                        <li><a class="link" href="#service">Услуги</a></li>
+                        <li><a class="link" href="#contacts">Контакты</a></li>
+                    </ul>
                 </nav>
 
                 <button class="mobile-header__button" />
@@ -59,19 +61,7 @@
     </div>
     <main class="main">
 
-        <div class="pop-up">
-            <div class="pop-up__container">
-                <button class="pop-up__close-button"></button>
-                <div class="pop-up__wrapper">
-                    <p class="pop-up__header">Заказать услугу</p>
-                    <p class="pop-up__info">Заполните форму, мы свяжемся с вами в течение суток </p>
-                    <input class="pop-up__input" type="text" placeholder="Имя">
-                    <input class="pop-up__input" type="text" placeholder="Электронная почта">
-                    <input class="pop-up__input" type="text" placeholder="Номер телефона">
-                    <button type="submit" class="pop-up__send-info">Отправить</button>
-                </div>
-            </div>
-        </div>
+
 
         <div class="wrapper">
             <div class="main  container">
@@ -187,6 +177,20 @@
             </div>
         </div>
 
+        <div class="pop-up">
+            <div class="pop-up__container">
+                <button class="pop-up__close-button"></button>
+                <div class="pop-up__wrapper">
+                    <p class="pop-up__header">Заказать услугу</p>
+                    <p class="pop-up__info">Заполните форму, мы свяжемся с вами в течение суток </p>
+                    <input class="pop-up__input" type="text" name="name" placeholder="Имя">
+                    <input class="pop-up__input" type="email" name="email" placeholder="Электронная почта">
+                    <input class="pop-up__input" type="tel" name="phone" placeholder="Номер телефона">
+                    <button type="submit" class="pop-up__send-info">Отправить</button>
+                </div>
+            </div>
+        </div>
+
         <div class="wrapper">
             <ul class="comments container">
                 <h2 class="comments__h2 h2">Отзывы</h2>
@@ -249,92 +253,96 @@
 
 
 
-                <section id="gallery-slider" class="gallery-slider">
-                    <div class="gallery-slider__content">
-                        <div class="wrapper">
-                            <div class="container">
-                                <p class="gallery-slider__header">Галерея проектов</p>
-                                <div class="gallery-slider__control">
-                                    <button class="gallery-slider__control_prev" />
-                                    <button class="gallery-slider__control_next" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-slider__images-box  gallery-slider__active">
-                            <div class="gallery-slider__slide">
-                                <picture class="gallery-slider__picture">
-                                    <source media="(max-width: 400px)"
-                                        srcset="Resources/Photos/Gallery/RC-Lesnoy-peyzazh/RC-Lesnoy-peyzazh-mobile.png">
-                                    <img class="gallery-slider__image"
-                                        src="Resources/Photos/Gallery/RC-Lesnoy-peyzazh/RC-Lesnoy-peyzazh.png"
-                                        alt="Изображение комнаты с двуспальной кроватью и туалетным столиком"
-                                        srcset="Resources/Photos/Gallery/RC-Lesnoy-peyzazh/RC-Lesnoy-peyzazh@2.png x2">
-                                </picture>
-                                <div class="wrapper">
-                                    <div class="container">
-                                        <a href="/Metrics/index.html" class="gallery-slider__project-link">
-                                            Проект двухкомнатной квартиры в ЖК Лесной Пейзаж</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-slider__images-box">
-                            <div class="gallery-slider__slide">
-                                <picture class="gallery-slider__picture">
-                                    <source media="(max-width: 400px)"
-                                        srcset="Resources/Photos/Gallery/RC-Mayak/RC-Mayak-mobile.png">
-                                    <img class="gallery-slider__image" src="Resources/Photos/Gallery/RC-Mayak/RC-Mayak.png"
-                                        alt="Изображение комнаты с жёлтым креслом и дизайнерским столиком"
-                                        srcset="Resources/Photos/Gallery/RC-Mayak/RC-Mayak@2.png x2">
-                                </picture>
-                                <div class="wrapper">
-                                    <div class="container">
-                                        <a href="/Metrics/index.html" class="gallery-slider__project-link">Проект гостиной в ЖК
-                                            Маяк</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-slider__images-box">
-                            <div class="gallery-slider__slide">
-                                <picture class="gallery-slider__picture">
-                                    <source media="(max-width: 400px)"
-                                        srcset="Resources/Photos/Gallery/Kitchen-in-house/Kitchen-in-house-mobile.png">
-                                    <img class="gallery-slider__image"
-                                        src="Resources/Photos/Gallery/Kitchen-in-house/Kitchen-in-house.png"
-                                        alt="Изображение дизайн-проекта кухни с барным столиком"
-                                        srcset="Resources/Photos/Gallery/Kitchen-in-house/Kitchen-in-house@2.png x2">
-                                </picture>
-                                <div class="wrapper">
-                                    <div class="container">
-                                        <a href="/Metrics/index.html" class="gallery-slider__project-link">Визуализация
-                                            кухни-гостиной в
-                                            частном доме</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-slider__images-box">
-                            <div class="gallery-slider__slide">
-                                <picture class="gallery-slider__picture">
-                                    <source media="(m-width: 400px)"
-                                        srcset="Resources/Photos/Gallery/RC-Severnyi-veter/RC-Severnyi-veter-mobile.png">
-                                    <img class="gallery-slider__image"
-                                        src="Resources/Photos/Gallery/RC-Severnyi-veter/RC-Severnyi-veter.png"
-                                        alt="Изображение комнаты с барным столиком и зелёной табуреткой"
-                                        srcset="Resources/Photos/Gallery/RC-Severnyi-veter/RC-Severnyi-veter@2.png x2">
-                                </picture>
-                                <div class="wrapper">
-                                    <div class="container">
-                                        <a href="/Metrics/index.html" class="gallery-slider__project-link">Проект кухни в
-                                            скандинавском
-                                            стиле для ЖК Северный Ветер</a>
-                                    </div>
-                                </div>
-                            </div>
+        <section id="gallery-slider" class="gallery-slider">
+            <div class="gallery-slider__content">
+                <div class="wrapper">
+                    <div class="container">
+                        <p class="gallery-slider__header">Галерея проектов</p>
+                        <div class="gallery-slider__control">
+                            <button class="gallery-slider__control_prev" />
+                            <button class="gallery-slider__control_next" />
                         </div>
                     </div>
-                </section>
+                </div>
+
+                <ul class="gallery-slider__images-list">
+                    <li class="gallery-slider__images-box  gallery-slider__active">
+                        <div class="gallery-slider__slide">
+                            <picture class="gallery-slider__picture">
+                                <source media="(max-width: 400px)"
+                                    srcset="Resources/Photos/Gallery/RC-Lesnoy-peyzazh/RC-Lesnoy-peyzazh-mobile.png">
+                                <img class="gallery-slider__image"
+                                    src="Resources/Photos/Gallery/RC-Lesnoy-peyzazh/RC-Lesnoy-peyzazh.png"
+                                    alt="Изображение комнаты с двуспальной кроватью и туалетным столиком"
+                                    srcset="Resources/Photos/Gallery/RC-Lesnoy-peyzazh/RC-Lesnoy-peyzazh@2.png x2">
+                            </picture>
+                            <div class="wrapper">
+                                <div class="container">
+                                    <a href="/Metrics/index.html" class="gallery-slider__project-link">
+                                        Проект двухкомнатной квартиры в ЖК Лесной Пейзаж</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-slider__images-box">
+                        <div class="gallery-slider__slide">
+                            <picture class="gallery-slider__picture">
+                                <source media="(max-width: 400px)"
+                                    srcset="Resources/Photos/Gallery/RC-Mayak/RC-Mayak-mobile.png">
+                                <img class="gallery-slider__image" src="Resources/Photos/Gallery/RC-Mayak/RC-Mayak.png"
+                                    alt="Изображение комнаты с жёлтым креслом и дизайнерским столиком"
+                                    srcset="Resources/Photos/Gallery/RC-Mayak/RC-Mayak@2.png x2">
+                            </picture>
+                            <div class="wrapper">
+                                <div class="container">
+                                    <a href="/Metrics/index.html" class="gallery-slider__project-link">Проект гостиной в
+                                        ЖК
+                                        Маяк</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-slider__images-box">
+                        <div class="gallery-slider__slide">
+                            <picture class="gallery-slider__picture">
+                                <source media="(max-width: 400px)"
+                                    srcset="Resources/Photos/Gallery/Kitchen-in-house/Kitchen-in-house-mobile.png">
+                                <img class="gallery-slider__image"
+                                    src="Resources/Photos/Gallery/Kitchen-in-house/Kitchen-in-house.png"
+                                    alt="Изображение дизайн-проекта кухни с барным столиком"
+                                    srcset="Resources/Photos/Gallery/Kitchen-in-house/Kitchen-in-house@2.png x2">
+                            </picture>
+                            <div class="wrapper">
+                                <div class="container">
+                                    <a href="/Metrics/index.html" class="gallery-slider__project-link">Визуализация
+                                        кухни-гостиной в
+                                        частном доме</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-slider__images-box">
+                        <div class="gallery-slider__slide">
+                            <picture class="gallery-slider__picture">
+                                <source media="(m-width: 400px)"
+                                    srcset="Resources/Photos/Gallery/RC-Severnyi-veter/RC-Severnyi-veter-mobile.png">
+                                <img class="gallery-slider__image"
+                                    src="Resources/Photos/Gallery/RC-Severnyi-veter/RC-Severnyi-veter.png"
+                                    alt="Изображение комнаты с барным столиком и зелёной табуреткой"
+                                    srcset="Resources/Photos/Gallery/RC-Severnyi-veter/RC-Severnyi-veter@2.png x2">
+                            </picture>
+                            <div class="wrapper">
+                                <div class="container">
+                                    <a href="/Metrics/index.html" class="gallery-slider__project-link">Проект кухни в
+                                        скандинавском
+                                        стиле для ЖК Северный Ветер</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 
 
@@ -354,10 +362,12 @@
 
     <footer class="footer black-background">
         <nav class="footer__navigation">
-            <a class="footer__link" href="#about-us">О нас</a>
-            <a class="footer__link" href="#project">Проекты</a>
-            <a class="footer__link" href="#service">Услуги</a>
-            <a class="footer__link" href="#contact">Контакты</a>
+            <ul class="footer__link-list">
+                <li><a class="footer__link" href="#about-us">О нас</a></li>
+                <li><a class="footer__link" href="#project">Проекты</a></li>
+                <li><a class="footer__link" href="#service">Услуги</a></li>
+                <li><a class="footer__link" href="#contact">Контакты</a></li>
+            </ul>
         </nav>
         <p class="footer__paragraph">Студия дизайна интерьера Метрика — 2023</p>
     </footer>

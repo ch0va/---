@@ -16,6 +16,10 @@ body {
   font-style: normal;
 }
 
+li {
+  list-style-type: none;
+}
+
 .body_fixed {
   overflow: hidden;
 }
@@ -264,12 +268,14 @@ a {
 .service__flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  column-gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: space-between;
 }
 
 .service__item {
   position: relative;
+  width: calc(50% - 5px);
   max-width: 570px;
   margin-bottom: 68px;
 }
@@ -286,7 +292,7 @@ a {
   color: #fff;
   background: #ad1818;
   border-radius: 5px;
-  top: 32px;
+  top: 26px;
   left: 30px;
   font-size: 22px;
   line-height: 30px;
@@ -434,16 +440,18 @@ a {
   display: flex;
   flex-direction: row;
   column-gap: 50px;
-  row-gap: 80px;
+  flex-wrap: wrap;
 }
 
 .comment__item {
+  width: 46%;
   max-width: 530px;
   margin-bottom: 79px;
 }
 
 .comment__item:nth-last-child(1) {
   max-width: 860px;
+  width: 100%;
 }
 
 .comment__header {

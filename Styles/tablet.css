@@ -294,14 +294,14 @@
 
   .gallery-slider__header {
     top: 82px;
-    left: 51px;
+    left: 15px;
     font-size: 20px;
     line-height: 27px;
   }
 
   .gallery-slider__project-link {
     bottom: 85px;
-    left: 51px;
+    left: 15px;
     width: 370px;
     font-size: 25px;
     line-height: 34px;
@@ -309,7 +309,7 @@
 
   .gallery-slider__control {
     bottom: 165px;
-    left: 52px;
+    left: 15px;
   }
 
   .contacts {

@@ -199,7 +199,7 @@
     margin-bottom: 80px;
   }
 
-  .project__item:nth-last-child(2) {
+  .project__item:last-child {
     margin-bottom: 100px;
   }
 
@@ -242,6 +242,7 @@
   }
 
   .service__item {
+
     max-width: 460px;
     margin-bottom: 80px;
   }
@@ -262,11 +263,13 @@
 
   .comments__flex {
     column-gap: 10px;
-    row-gap: 80px;
+    row-gap: 0;
+    justify-content: space-between;
   }
 
   .comment__item {
-    max-width: 460px;
+    max-width: 459px;
+    width: 100%;
   }
 
   .comment__item:last-child:nth-child(odd) {

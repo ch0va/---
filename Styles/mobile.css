@@ -7,7 +7,6 @@
     padding: 0 12px;
   }
 
-  
   .link {
     width: fit-content;
     border-bottom: 1px solid transparent;
@@ -28,13 +27,13 @@
   }
 
   .mobile-header__button::before {
-    left:auto;
+    left: auto;
     right: 5px;
     width: 40px;
   }
 
   .mobile-header__button::after {
-    left:auto;
+    left: auto;
     right: 5px;
     width: 25px;
   }
@@ -141,7 +140,7 @@
     padding: 34px 0;
   }
 
-  .project__item:nth-child(4) {
+  .project__item:last-child {
     margin-bottom: 60px;
   }
 
@@ -170,8 +169,8 @@
     max-width: 100%;
   }
 
-  .service__item:nth-child(4) {
-    margin-bottom: 60px;
+  .service__item:last-child {
+    margin-bottom: 46px;
   }
 
   .service__price {
@@ -278,7 +277,6 @@
 
   .gallery-slider {
     height: 47vh;
-    
   }
 
   .gallery-slider__content {
@@ -317,7 +315,7 @@
 
   .contacts {
     margin-top: 78px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
   .contacts__flex-container {
@@ -343,12 +341,16 @@
   }
 
   .footer {
-    padding-top: 32px;
+    padding-top: 30px;
   }
 
   .footer__link {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .footer__link-list {
+    gap: 30px;
   }
 
   .footer__paragraph {

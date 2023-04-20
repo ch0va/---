@@ -288,11 +288,13 @@
   }
 
   .gallery-slider {
+    min-height: 400px;
     height: 63vh;
   }
 
   .gallery-slider__content {
-    height: 63vh;
+    min-height: 400px;
+    height: 100%;
   }
 
   .gallery-slider__header {

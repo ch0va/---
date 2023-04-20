@@ -276,12 +276,13 @@
   }
 
   .gallery-slider {
-    height: 47vh;
+    min-height: 300px;
+    height: 48vh;
   }
 
   .gallery-slider__content {
-    height: 47vh;
-    min-height: 100px;
+    min-height: 300px;
+    height: 100%;
   }
 
   .gallery-slider__header {
@@ -305,6 +306,7 @@
     max-width: calc(100% - 28px);
     bottom: 193px;
     left: 12px;
+    top: 50%;
   }
 
   .gallery-slider__control_prev,
